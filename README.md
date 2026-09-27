@@ -62,3 +62,30 @@ ai-context-harness/
 ## Session Handoff
 
 `prompts/session-handoff.md` を利用すると、新しいAIセッションから対象プロジェクトの Context / State を確認し、作業を再開できます。
+
+## Recommended Operational Flow
+
+日常利用では、Context Harness を毎回読むのではなく、対象プロジェクトが明確になったときだけ利用します。
+
+```text
+Project identification
+    ↓
+Repository / Registry check
+    ↓
+Read CONTEXT + STATE
+    ↓
+Do the actual work in the target repository
+    ↓
+Verify the result
+    ↓
+Update STATE / DECISIONS only when needed
+```
+
+### Practical Rules
+
+- 通常チャットはプロジェクト活動として記録しない。
+- 対象プロジェクトが不明なら Context を推測して読み込まない。
+- 実作業は対象リポジトリで行い、Harness には継続に必要な情報だけ残す。
+- 意味のある作業が完了したら `STATE.md` の次アクションを確認・更新する。
+- 重要な判断だけ `DECISIONS.md` に残す。
+- Public Harness には Public にできる情報だけ保存する。
