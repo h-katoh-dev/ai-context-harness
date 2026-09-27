@@ -14,6 +14,7 @@ Architecture learning / knowledge base construction
 - 公開リポジトリ方針を明文化
 - principles / patterns / exercises / case-studies / reviews / ADR の構造を定義
 - dev-standardとの役割分担を明文化
+- 最初の実践ADRとしてCMS中心の会員サイトにおける認証責務の判断例を追加
 
 ## In Progress
 
@@ -29,4 +30,4 @@ Architecture learning / knowledge base construction
 
 ## Updated
 
-2026-09-04
+2026-09-28
